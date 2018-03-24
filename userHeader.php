@@ -16,9 +16,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav my-nav">
-        <li><a href="addmember.php">Add Member <span class="sr-only">(current)</span></a></li>
-        <li><a href="userlist.php">User List</a></li>
-    		<li><a href="notice.php">Notice</a></li>
+        <li><a href="index.php">Home</a></li>
+    		<li><a href="logout.php">Logout</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

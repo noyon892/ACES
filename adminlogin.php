@@ -9,10 +9,10 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-sm-7 visible">
               <img class="img-responsive" src="images/image3.jpg">
             </div>
-            <div class="col-md-5 login-panel">
+            <div class="col-sm-5 login-panel">
               <div class="row">
                 <div class="full-panel">
                     <div class="panel panel-primary">

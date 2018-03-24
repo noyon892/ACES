@@ -40,9 +40,8 @@ body
 	margin-top: 10px;
 	color: #001733;
 }
-.my-nav-logo img
-{
-	margin: 0 auto;
+.my-logo{
+	padding: 0 15px;
 }
 .my-nav
 {
@@ -260,7 +259,10 @@ body
 {
 	padding-top: 50px;
 }
-
+.promo-text
+{
+	padding-top: 150px;
+}
 
 /*Mission*/
 .mission
@@ -722,6 +724,9 @@ body
 	.visible
 	{
 		display: none;
+	}
+	.login-panel{
+		padding: 20px;
 	}
 	.my-nav>li
 	{
