@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 require("db.php");
 
 
@@ -20,7 +21,9 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - Name: " . $row["username"]. " " . $row["password"]. "<br>";
+        $_SESSION['ROLE'] = "admin";
+        header("Location: addmember.php");
+
     }
 } else {
     echo "login failed";

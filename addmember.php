@@ -1,8 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <title>Add Member</title>
-    <?php include 'head.php';?>
+    <?php include 'head.php';
+    session_start();
+    	if( $_SESSION['ROLE'] == "admin")
+    	{
+
+    	}
+    	else{
+    		 header("Location: login.php");
+    	}
+
+    ?>
   </head>
   <body>
     <?php include 'adminHeader.php';?>
