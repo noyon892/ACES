@@ -1,14 +1,14 @@
 
-  	<div class="container-fluid Contact-info">
+  	<div class="container-fluid Contact-info  visible">
   	  <div class="container">
   	    <div class="row">
-  	      <div class="col-xs-12 col-sm-10 col-md-10 visible">
+  	      <div class="col-xs-12 col-sm-10 col-md-10">
   	        <a class="navbar-brand navbar-logo my-nav-logo" href="index.html">
   	           <div class="row">
-  	           	<div class="col-md-1">
-  	           		<img class="img-responsive" alt="Brand" src="images/logo2.png">
+  	           	<div class="col-sm-1">
+  	           		<img class="" alt="Brand" src="images/logo2.png">
   	           	</div>
-  	           	<div class="col-md-9 name">
+  	           	<div class="col-sm-9 name">
   	           		<h2 class="text-left">AIUB Community of Engineering Students-ACES</h2>
   	           	</div>
   	           </div>
@@ -29,7 +29,7 @@
       		    <span class="icon-bar"></span>
       		    <span class="icon-bar"></span>
       		  </button>
-      		  <a class="navbar-brand navbar-logo vanish" href="index.html">
+      		  <a class="navbar-brand navbar-logo vanish my-logo" href="index.html">
       		     <img class="img-responsive" alt="Brand" src="images/logo2.png">
       		  </a>
       		  

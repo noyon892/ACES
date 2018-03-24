@@ -22,7 +22,6 @@
 			<h1 class="text-center text-success font"><strong>Create Notice</strong></h1>
 			  <div class="tab-content">
 			    <div id="home" class="tab-pane fade in active">
-			    	
 					<form method="post">
 					  <div class="form-group font">
 					    <label for="title" class="font">Title</label>

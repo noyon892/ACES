@@ -10,15 +10,15 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-sm-7 visible">
               <img class="img-responsive" src="images/image3.jpg">
             </div>
-            <div class="col-md-5 login-panel">
+            <div class="col-sm-5 login-panel">
               <div class="row">
                 <div class="full-panel">
                     <div class="panel panel-primary">
                         <div class="panel-heading font">
-                            <span class="glyphicon glyphicon-lock"></span> Login</div>
+                            <span class="glyphicon glyphicon-lock"></span>User Login</div>
                         <div class="panel-body">
                             <form class="form-horizontal" role="form" action="login_admin.php" method="post">
                               <div class="form-group">

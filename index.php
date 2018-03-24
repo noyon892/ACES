@@ -226,9 +226,13 @@
     <!-- Our Mission -->
     <div class="container promo-mission" id="promo-mission">
       <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 promo-video">
+       
+       <div class="col-sm-4">
+         <h1 class="text-center promo-text">Watch Our Promo Video</h1>
+       </div>
+        <div class="col-sm-6 promo-video">
           <figure>
-            <iframe class="center-block" src="https://www.youtube.com/embed/kHP2f5bp_Xc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TxZcO00iBpQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </figure>
         </div>
       </div>
