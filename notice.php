@@ -71,14 +71,16 @@ require("db.php");
 
 $title=$_REQUEST["title"];
 $description=$_REQUEST["description"];
+$type=$_REQUEST["type"];
 
 
 //var_dump($title,$description);
-$date=date("Y-m-d");
+$date=date("d M");
+var_dump($date);
 
 
-$sql = "INSERT INTO notice (id, adminname, title,description,date)
-VALUES (null, '$_SESSION[ROLE]', '$title','$description','$date')";
+$sql = "INSERT INTO notice (id, adminname, title,description,type,date)
+VALUES (null, '$_SESSION[ROLE]', '$title','$description','$type','$date')";
 
 if (mysqli_query($conn, $sql)) {
     //echo "New record created successfully";

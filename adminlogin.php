@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Admin Login</title>
+    <title>User Login</title>
     <?php include 'head.php';?>
   </head>
   <body>
+
     <?php include 'header.php';?>
 
     <div class="container">
@@ -17,9 +18,9 @@
                 <div class="full-panel">
                     <div class="panel panel-primary">
                         <div class="panel-heading font">
-                            <span class="glyphicon glyphicon-lock"></span>Admin Login</div>
+                            <span class="glyphicon glyphicon-lock"></span>User Login</div>
                         <div class="panel-body">
-                            <form class="form-horizontal" role="form" method="post">
+                            <form class="form-horizontal" role="form" action="login_admin.php" method="post">
                               <div class="form-group">
                                   <label for="inputEmail3" class="col-sm-3 control-label font">
                                       Username</label>
@@ -53,6 +54,7 @@
             </div>
         </div>
     </div>
+
 
     <?php include 'footer.php';?>
 

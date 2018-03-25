@@ -8,6 +8,27 @@
 
     <?php include 'header.php';?>
 
+    <?php 
+
+    require("db.php");
+
+
+
+$sql = "select * from notice  where type = 'public' ";
+
+
+
+$result = $conn->query($sql);
+
+$conn->close();
+
+?>
+
+
+
+
+    
+
 
     <!-- Carosoul -->
     <div class="container-fluid no-pad">
@@ -93,85 +114,47 @@
               </div>
               <div class="panel-body my-panel-body">
                   <ul class="media-list">
-                      <li class="media">
-                          <div class="media-left">
-                              <div class="panel panel-danger text-center date">
-                                  <div class="panel-heading month">
-                                      <span class="panel-title strong">
-                                          Mar
-                                      </span>
-                                  </div>
-                                  <div class="panel-body day text-danger">
-                                      23
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="media-body well no-bg">
-                              <div class="panel-heading no-pad">
-                                      <span class="panel-title strong all-caps">
-                                          <h4>Praesent Tincidunt</h4>
-                                      </span>
-                              </div>
-                              <hr class="no-margin">
-                              <div class="panel-body text-default no-pad">
-                                 <p> Sed convallis dignissim magna et dignissim. Praesent tincidunt sapien eu gravida dignissim.</p>
-                              </div>
-                          </div>
-                      </li>
-                      <li class="media">
-                          <div class="media-left">
-                              <div class="panel panel-danger text-center date">
-                                  <div class="panel-heading month">
-                                      <span class="panel-title strong">
-                                          Jan
-                                      </span>
-                                  </div>
-                                  <div class="panel-body text-danger day">
-                                      16
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="media-body well no-bg">
-                              <div class="panel-heading no-pad">
-                                      <span class="panel-title strong all-caps">
-                                          <h4>Praesent Tincidunt</h4>
-                                      </span>
-                              </div>
-                              <hr class="no-margin">
-                              <div class="panel-body text-default no-pad">
-                                 <p>
-                                    Sed convallis dignissim magna et dignissim. Praesent tincidunt sapien eu gravida dignissim.
-                                 </p>
-                              </div>
-                          </div>
-                      </li>
-                      <li class="media">
-                          <div class="media-left">
-                              <div class="panel panel-danger text-center date">
-                                  <div class="panel-heading month">
-                                      <span class="panel-title strong all-caps">
-                                          Dec
-                                      </span>
-                                  </div>
-                                  <div class="panel-body text-danger day">
-                                      8
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="media-body well no-bg">
-                              <div class="panel-heading no-pad">
-                                      <span class="panel-title strong all-caps">
-                                          <h4>Praesent Tincidunt</h4>
-                                      </span>
-                              </div>
-                              <hr class="no-margin">
-                              <div class="panel-body text-default no-pad">
-                                <p>
-                                    Sed convallis dignissim magna et dignissim. Praesent tincidunt sapien eu gravida dignissim.
-                                 </p>
-                              </div>
-                          </div>
-                      </li>
+
+                    <?php
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+
+      //var_dump($row);
+     
+             echo  "<li class=" . "'media'" . ">";
+                 echo       " <div class=" . "'media-left'" . ">";
+                    echo         " <div class=" . "'panel panel-danger text-center date'" . ">";
+                         echo         "<div class=" . "'panel-heading month'" . ">";
+                           echo           "<span class=" . "'panel-title strong'" . ">";
+                              echo          $row["date"];
+                                echo     " </span>";
+                                echo "</div>";
+                                
+                            echo  "</div>";
+                          echo "</div>";
+                        echo   "<div class=" . "'media-body well no-bg'" . ">";
+                        echo      "<div class=" . "'panel-heading no-pad'" . ">";
+                         echo             "<span class=" . "'panel-title strong all-caps'" . ">";
+                           echo               "<h4>" . $row["title"] . "</h4>";
+                            echo          "</span>";
+                           echo   "</div>";
+                          echo    "<hr class=" . "'no-margin'" . ">";
+                         echo     "<div class=" . "'panel-body text-default no-pad'" .">";
+                         echo        "<p>". $row["description"] ."</p>";
+                          echo    "</div>";
+                       echo   "</div>";
+                   echo   "</li>";
+      
+    }
+} 
+
+
+             
+
+                      ?>
+                   
                     </ul>
                   <a href="#" class="btn btn-warning btn-block">More Events »</a>
               </div>
