@@ -17,7 +17,7 @@
                         <h2 class=""><strong>About us</strong></h2>  
                         <p class="">
                           <strong>
-                           ACES is a non-profitable youth developing foundation focuses on motivating young students to involve in ICT sector. It not only motivates but also makes a platform to engage the students in different ICT related activities.
+                           It's a professional student organization in providing excellent welfare and services as well as acquiring academic excellence for the engineering students.
                           </strong>
                         </p>
                       </div>

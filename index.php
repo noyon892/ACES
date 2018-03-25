@@ -107,12 +107,15 @@
                               </div>
                           </div>
                           <div class="media-body well no-bg">
-                              <h4 class="media-heading">
-                                  Pulvinar Mauris Eu
-                              </h4>
-                              <p>
-                                  Vivamus pulvinar mauris eu placerat blandit. In euismod tellus vel ex vestibulum congue.
-                              </p>
+                              <div class="panel-heading no-pad">
+                                      <span class="panel-title strong all-caps">
+                                          <h4>Praesent Tincidunt</h4>
+                                      </span>
+                              </div>
+                              <hr class="no-margin">
+                              <div class="panel-body text-default no-pad">
+                                 <p> Sed convallis dignissim magna et dignissim. Praesent tincidunt sapien eu gravida dignissim.</p>
+                              </div>
                           </div>
                       </li>
                       <li class="media">
@@ -129,12 +132,17 @@
                               </div>
                           </div>
                           <div class="media-body well no-bg">
-                              <h4 class="media-heading">
-                                  Aenean Consectetur Ultricies
-                              </h4>
-                              <p>
-                                  Curabitur vel malesuada tortor, sit amet ultricies mauris. Aenean consectetur ultricies luctus.
-                              </p>
+                              <div class="panel-heading no-pad">
+                                      <span class="panel-title strong all-caps">
+                                          <h4>Praesent Tincidunt</h4>
+                                      </span>
+                              </div>
+                              <hr class="no-margin">
+                              <div class="panel-body text-default no-pad">
+                                 <p>
+                                    Sed convallis dignissim magna et dignissim. Praesent tincidunt sapien eu gravida dignissim.
+                                 </p>
+                              </div>
                           </div>
                       </li>
                       <li class="media">
@@ -151,12 +159,17 @@
                               </div>
                           </div>
                           <div class="media-body well no-bg">
-                              <h4 class="media-heading">
-                                  Praesent Tincidunt
-                              </h4>
-                              <p>
-                                  Sed convallis dignissim magna et dignissim. Praesent tincidunt sapien eu gravida dignissim.
-                              </p>
+                              <div class="panel-heading no-pad">
+                                      <span class="panel-title strong all-caps">
+                                          <h4>Praesent Tincidunt</h4>
+                                      </span>
+                              </div>
+                              <hr class="no-margin">
+                              <div class="panel-body text-default no-pad">
+                                <p>
+                                    Sed convallis dignissim magna et dignissim. Praesent tincidunt sapien eu gravida dignissim.
+                                 </p>
+                              </div>
                           </div>
                       </li>
                     </ul>
