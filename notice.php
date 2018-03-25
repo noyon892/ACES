@@ -35,6 +35,14 @@
 					    <label for="description" class="font">Description:</label>
 					    <textarea type="text-area" class="form-control font" id="description" name="description"></textarea>
 					  </div>
+					  <div class="form-group">
+					    <label for="description" class="font">Type:</label>
+					    <select name="type">
+					    	<option class="active" disabled>Select</option>
+					    	<option>Private</option>
+					    	<option>Public</option>
+					    </select>
+					  </div>
 					  <!-- <input type="submit" class="btn btn-primary btn-lg font" value="Submit"> -->
 					  <button type="submit" class="btn btn-primary btn-lg font submit" id="submit">Submit</button>
 					</form>

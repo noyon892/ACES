@@ -41,7 +41,7 @@
       		    <li><a href="index.php">Home</a></li>
       		        <li><a href="about.php">About Us</a></li>
       		        <li><a href="ourwork.php">Our Works</a></li>
-      		        <li><a href="#our-team">Our Team</a></li>
+      		        <li><a href="ourteam.php">Our Team</a></li>
       		        <li><a href="contactme.php">Contact Us</a></li>
       		  </ul>
       		  <ul class="nav navbar-nav navbar-right">
