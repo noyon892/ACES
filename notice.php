@@ -2,7 +2,16 @@
 <html>
  <head>
     <title>Add Member</title>
-    <?php include 'head.php';?>
+    <?php include 'head.php';
+    session_start();
+    	if( $_SESSION['ROLE'] == "admin")
+    	{
+
+    	}
+    	else{
+    		 header("Location: login.php");
+    	}
+    	?>
   </head>
   <body>
     <?php include 'adminHeader.php';?>
@@ -11,6 +20,9 @@
 	  <div class="row">
 			<div class="col-md-5 cal-md-offset-2">
 			<h1 class="text-center text-success font"><strong>Create Notice</strong></h1>
+			<div class="panel-success">
+			    		<p class="text-success" id="my-alert"></p>
+			    	</div>
 			  <div class="tab-content">
 			    <div id="home" class="tab-pane fade in active">
 					<form method="post">
@@ -34,3 +46,43 @@
 		</div>
 </body>
 </html>
+
+
+
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // …
+
+
+
+require("db.php");
+
+
+
+
+$title=$_REQUEST["title"];
+$description=$_REQUEST["description"];
+
+
+//var_dump($title,$description);
+$date=date("Y-m-d");
+
+
+$sql = "INSERT INTO notice (id, adminname, title,description,date)
+VALUES (null, '$_SESSION[ROLE]', '$title','$description','$date')";
+
+if (mysqli_query($conn, $sql)) {
+    //echo "New record created successfully";
+    
+   echo" <script>
+    	document.getElementById('my-alert').innerHTML='successfully notice inserted';
+    </script>";
+      // header("Location: addmember.php");
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+mysqli_close($conn);
+}
+?>

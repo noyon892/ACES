@@ -2,7 +2,16 @@
 <html>
 <head>
   <title>Login</title>
-   <?php include 'head.php';?>
+   <?php include 'head.php';
+   session_start();
+      if( $_SESSION['ROLE'] == "admin")
+      {
+
+      }
+      else{
+         header("Location: login.php");
+      }
+      ?>
 <style>
 table {
     font-family: arial, sans-serif;
