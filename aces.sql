@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 23, 2018 at 05:29 PM
--- Server version: 10.1.24-MariaDB
--- PHP Version: 7.1.6
+-- Generation Time: Mar 25, 2018 at 11:16 PM
+-- Server version: 10.1.30-MariaDB
+-- PHP Version: 7.2.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -47,7 +47,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `username`, `email`, `phone`, `password`, `gender`, `dob`, `nid`, `presentaddress`, `parmanentaddress`) VALUES
-(3, 'noyon', 'noyon', 'noyon892@gmail.com', '', 'sha1$4d65371e$1$4ca3ae86b81c0ec5cf94d0d4c465aef9f945101d', 'Male', '2018-03-18', '19979972342363842', 'Mahajon Bari,Affratpara,Chatmohar,Pabna', 'Dhaka');
+(4, 'admin', 'john', 'ddddd', '01', 'admin', 'male', '0000-00-00', '0541', 'dhaka', 'bogura');
 
 -- --------------------------------------------------------
 
@@ -59,17 +59,22 @@ CREATE TABLE `notice` (
   `id` int(11) NOT NULL,
   `adminname` varchar(128) NOT NULL,
   `title` varchar(500) NOT NULL,
-  `description` varchar(5000) NOT NULL
+  `description` varchar(5000) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `date` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `notice`
 --
 
-INSERT INTO `notice` (`id`, `adminname`, `title`, `description`) VALUES
-(1, 'noyon', 'Demo Title', 'Demo Description\r\n'),
-(2, 'noyon', 'Demo Title 2', 'Demo Description 2'),
-(3, 'noyon', 'Demo Title 3', 'Demo Description 3');
+INSERT INTO `notice` (`id`, `adminname`, `title`, `description`, `type`, `date`) VALUES
+(1, 'noyon', 'Demo Title', 'Demo Description\r\n', '', '0000-00-00'),
+(2, 'noyon', 'Demo Title 2', 'Demo Description 2', 'private', '21 Feb'),
+(3, 'noyon', 'Demo Title 3', 'Demo Description 3', 'public', '25 Mar'),
+(8, 'admin', 'sf', 'sf', 'public', ' 25 jan'),
+(13, 'admin', 'tydtygvh', 'jydgyjhbhj', 'Private', '25 Mar'),
+(14, 'admin', 'fuck', 'jlhvouijlkbjk', 'Public', '25 Mar');
 
 -- --------------------------------------------------------
 
@@ -92,9 +97,14 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `username`, `email`, `password`, `phone`, `address`) VALUES
-(36, 'Md. Hasan Uzzaman', 'noyon892', 'noyon8920@gmail.com', 'sha1$d4be07b8$1$04212712d76a01ecaf79888890f158c90ce8a6b8', '01733844422', 'Mahajon Bari,Affratpara,Chatmohar,Pabna'),
-(38, 'Md. Hasan Uzzaman', 'noyon8920', 'noyon892@gmail.com', 'sha1$2b829da2$1$e0ef9b3a1551264ea0c67cec7920f54f07ee222a', '01733844422', 'Mahajon Bari,Affratpara,Chatmohar,Pabna'),
-(39, 'Shanto Siddiq', 'shanto', 'shanto@gmail.com', 'sha1$0b45ce61$1$25bfc8a2ed4f45022afc135295d8a1c289936ffc', '01770844244', 'Dhaka');
+(41, '', '', '', '', '', ''),
+(42, 'jhkbk', 'user', 'noyon@bbb.com', 'user', 'jkb', 'kjbjk'),
+(44, 'SJKD', 'JL', 'JK@JKB.COM', 'HB', 'JHB', 'JHB'),
+(45, 'GUT', 'GR', 'GR@bf.g', 'bhfhgr', 'ffgf', 'dfgdg'),
+(46, 'Noyon', 'Noyon', 'noyon89002@gmail.com', '0284855789', 'fghjk', 'dfghjk'),
+(47, 'lksdfj', 'bsdhf', 'kaudhfh@hh.h', 'sjkdh', 'bjkshbd', 'nsdhf'),
+(49, 'ldkfglijh', 'djfogh', 'jfogeoij@hsd.c', 'lrhfgo', 'hfgoiejhg', 'joewrijht'),
+(55, 'lfkvhsild', 'ILDJRG', 'DKLJFGH@G.V', 'SDJHF', 'HKUH', 'JKFHG');
 
 --
 -- Indexes for dumped tables
@@ -130,17 +140,20 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
 --
 -- AUTO_INCREMENT for table `notice`
 --
 ALTER TABLE `notice`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
