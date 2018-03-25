@@ -3,7 +3,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
           <ul class="nav navbar-nav navbar-right my-footer text-center animated wow fadeIn">
             <li><a href="#">Research</a></li>
-            <li><a href="#about">Magazine</a></li>
+            <li><a href="magazine.php">Magazine</a></li>
             <li><a href="#our-projects">Alumni</a></li>
             <li><a href="#our-team">Gallery</a></li>
           </ul>
