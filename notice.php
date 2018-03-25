@@ -60,39 +60,25 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // …
-
-
 
 require("db.php");
-
-
-
 
 $title=$_REQUEST["title"];
 $description=$_REQUEST["description"];
 $type=$_REQUEST["type"];
 
-
-//var_dump($title,$description);
 $date=date("d M");
-var_dump($date);
-
 
 $sql = "INSERT INTO notice (id, adminname, title,description,type,date)
 VALUES (null, '$_SESSION[ROLE]', '$title','$description','$type','$date')";
 
 if (mysqli_query($conn, $sql)) {
-    //echo "New record created successfully";
-    
    echo" <script>
     	document.getElementById('my-alert').innerHTML='successfully notice inserted';
     </script>";
-      // header("Location: addmember.php");
 } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    echo "Error When Adding Notice. ";
 }
-
 mysqli_close($conn);
 }
 ?>

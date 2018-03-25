@@ -11,10 +11,7 @@
     <?php 
 
     require("db.php");
-
-
-
-$sql = "select * from notice  where type = 'public' ";
+$sql = "select * from notice where type = 'public' order by date desc limit 3";
 
 
 
@@ -146,17 +143,11 @@ if ($result->num_rows > 0) {
                           echo    "</div>";
                        echo   "</div>";
                    echo   "</li>";
-      
-    }
-} 
-
-
-             
-
-                      ?>
-                   
-                    </ul>
-                  <a href="#" class="btn btn-warning btn-block">More Events »</a>
+                }
+            } 
+          ?>
+                  </ul>
+                  <a href="#" class="btn btn-warning btn-block" disabled>More Events »</a>
               </div>
           </div>
           <!-- End fluid width widget --> 

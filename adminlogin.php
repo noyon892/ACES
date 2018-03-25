@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>User Login</title>
+    <title>Admin Login</title>
     <?php include 'head.php';?>
   </head>
   <body>
@@ -18,7 +18,7 @@
                 <div class="full-panel">
                     <div class="panel panel-primary">
                         <div class="panel-heading font">
-                            <span class="glyphicon glyphicon-lock"></span>User Login</div>
+                            <span class="glyphicon glyphicon-lock"></span>Admin Login</div>
                         <div class="panel-body">
                             <form class="form-horizontal" role="form" action="login_admin.php" method="post">
                               <div class="form-group">

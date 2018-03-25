@@ -55,7 +55,7 @@
                               <div class="col-sm-4 col-sm-offset-2 no-pad"><input type="text" class="form-control" name="name" placeholder="Name" required></div>
                               <div class="col-sm-4 no-pad"><input type="email" class="form-control" name="email" placeholder="Email" required></div>
                               <div class="col-sm-8 col-sm-offset-2 no-pad"><textarea class="form-control" rows="3" name="comments" placeholder="Your Feedback Here" required></textarea></div>
-                              <div class="col-sm-8 col-sm-offset-2 no-pad"><button type="submit" class="btn btn-primary btn-group-justified my-button">Submit</button></div>
+                              <div class="col-sm-8 col-sm-offset-2 no-pad"><button type="submit" class="btn btn-primary btn-group-justified my-button" disabled>Submit</button></div>
                             </div>
                         </form>
                     </div>

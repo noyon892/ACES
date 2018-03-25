@@ -80,23 +80,12 @@
 
 
 
-
-
-
-
-
 <?php
-
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST')
  {
-    // …
-
 
 require("db.php");
-
-
-
 
 $name=$_REQUEST["name"];
 $username=$_REQUEST["username"];
@@ -105,19 +94,15 @@ $phone=$_REQUEST["phone"];
 $password=$_REQUEST["password"];
 $address=$_REQUEST["address"];
 
-
-
-$sql = "INSERT INTO user (id, name, username,email,password,phone,address)
-VALUES (null, '$name', '$username','$email','$phone','$password','$address')";
+$sql = "INSERT INTO user (name, username,email,password,phone,address)
+VALUES (null, '$name', '$username','$email','$password','$phone','$address')";
 
 if (mysqli_query($conn, $sql)) {
-    //echo "New record created successfully";
    echo" <script>
     	document.getElementById('my-alert').innerHTML='successfully Member Added';
     </script>";
-      // header("Location: addmember.php");
 } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    echo "Error When Adding Member.";
 }
 
 mysqli_close($conn);
