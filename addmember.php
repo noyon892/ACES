@@ -24,7 +24,10 @@
 			<h1 class="text-center text-success font"><strong>Register page</strong></h1>
 			  <div class="tab-content">
 			    <div id="home" class="tab-pane fade in active">
-					<form method="post">
+			    	<div class="panel-success">
+			    		<p class="text-success" id="my-alert"></p>
+			    	</div>
+					<form method="post" action="">
 					  <div class="form-group font">
 					    <label for="FullName" class="font">Full Name</label>
 					    <input type="text" class="form-control font" id="name" name="name">
@@ -74,3 +77,50 @@
 		</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+<?php
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST')
+ {
+    // …
+
+
+require("db.php");
+
+
+
+
+$name=$_REQUEST["name"];
+$username=$_REQUEST["username"];
+$email=$_REQUEST["email"];
+$phone=$_REQUEST["phone"];
+$password=$_REQUEST["password"];
+$address=$_REQUEST["address"];
+
+
+
+$sql = "INSERT INTO user (id, name, username,email,password,phone,address)
+VALUES (null, '$name', '$username','$email','$phone','$password','$address')";
+
+if (mysqli_query($conn, $sql)) {
+    //echo "New record created successfully";
+   echo" <script>
+    	document.getElementById('my-alert').innerHTML='successfully Member Added';
+    </script>";
+      // header("Location: addmember.php");
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+mysqli_close($conn);
+}
+
+?>
