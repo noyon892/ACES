@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col-sm-6 promo-image">
           <figure>
-            <img class="img-responsive" src="images/image3.jpg">
+            <img class="img-responsive" src="images/mission.jpg">
           </figure>
         </div>
         <div class="col-sm-6 promo-mission-body visible">
@@ -41,7 +41,7 @@
         </div>
         <div class="col-sm-6 promo-image">
           <figure>
-            <img class="img-responsive" src="images/image3.jpg">
+            <img class="img-responsive" src="images/vision.jpg">
           </figure>
         </div>
       </div>

@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"> -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- JS linking -->
-    <script src="/js/jquery-3.2.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/myjs.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/myjs.js"></script>
  

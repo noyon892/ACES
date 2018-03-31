@@ -4,8 +4,8 @@
           <ul class="nav navbar-nav navbar-right my-footer text-center animated wow fadeIn">
             <li><a href="#">Research</a></li>
             <li><a href="magazine.php">Magazine</a></li>
-            <li><a href="#our-projects">Alumni</a></li>
-            <li><a href="#our-team">Gallery</a></li>
+            <li><a href="#">Alumni</a></li>
+            <li><a href="gallery.php">Gallery</a></li>
           </ul>
       </div><!-- /.container-fluid -->
       <hr>
@@ -34,16 +34,14 @@
                           <p class="email"><strong><i class="fa fa-envelope-o" aria-hidden="true"></i>aces@yourmail.com</strong>
                         </div>
                         <div class="social text-center">
-                          <!-- FaceBook -->
-                          <a href="https://www.facebook.com/csdfoundationbd/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                          <!-- Youtube -->
-                          <a href="https://www.youtube.com/channel/UCmzeyt9l8OtysGFRL5EEQwQ" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                          <!-- Twitter -->
-                          <a href="https://twitter.com/csdfbd" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                          <!-- Google Plus -->
-                          <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                          <!-- Linkedin -->
-                          <a href="https://www.linkedin.com/company-beta/13352994/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <h4 class="widget-title">Follow us</h4>
+                            <ul class="social-nav">
+                                <li><a href="#" target="_blank" title="Twitter" rel="nofollow" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" target="_blank" title="Facebook" rel="nofollow" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" target="_blank" title="Google plus" rel="nofollow" class="google"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#" target="_blank" title="Linkedin" rel="nofollow" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#" target="_blank" title="Youtube" rel="nofollow" class="youtube"><i class="fa fa-youtube"></i></a></li>        
+                            </ul>
                         </div>
                       </div>
                     </div>
@@ -55,11 +53,19 @@
                               <div class="col-sm-4 col-sm-offset-2 no-pad"><input type="text" class="form-control" name="name" placeholder="Name" required></div>
                               <div class="col-sm-4 no-pad"><input type="email" class="form-control" name="email" placeholder="Email" required></div>
                               <div class="col-sm-8 col-sm-offset-2 no-pad"><textarea class="form-control" rows="3" name="comments" placeholder="Your Feedback Here" required></textarea></div>
-                              <div class="col-sm-8 col-sm-offset-2 no-pad"><button type="submit" class="btn btn-primary btn-group-justified my-button" disabled>Submit</button></div>
+                              <div class="col-sm-8 col-sm-offset-2 no-pad"><button type="submit" class="btn btn-primary btn-group-justified my-button" title='Please Visit Contact Us Page' disabled>Submit</button></div>
                             </div>
                         </form>
                     </div>
                   </div>
       </div>
     </footer>
-  <div class="copy-right text-center container-fluid">Copyright &copy AIUB Community of Engineering Students-ACES 2018 | All rights reserved.</div>
+  <div class="copy-right container-fluid">
+      <p class="text-center">
+       Copyright &copy AIUB Community of Engineering Students-ACES <?= date("Y"); ?> | All rights reserved.
+      </p>
+      <!-- <p class="text-right visible">
+       <a href="#" target="_blank" >Meet The Developer</a>
+      </p> -->
+    </div>
+  </div>

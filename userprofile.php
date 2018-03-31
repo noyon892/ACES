@@ -80,8 +80,8 @@ $conn->close();
                          <div class="panel-footer">
                                 <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
                                 <span class="pull-right">
-                                    <a href="/useredit/<%=result[i].id%>" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit" disabled></i></a>
-                                    <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger" href="/index"><i class="glyphicon glyphicon-remove" disabled></i></a>
+                                    <a href="#" data-original-title="Edit" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit" disabled></i></a>
+                                    <a data-original-title="Remove" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger" href="index.php"><i class="glyphicon glyphicon-remove" disabled></i></a>
                                 </span>
                             </div>
                     

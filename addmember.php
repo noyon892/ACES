@@ -66,10 +66,9 @@
 					  </div>
 					  <!-- <input type="submit" class="btn btn-primary btn-lg font" value="Submit"> -->
 					  <button type="submit" class="btn btn-primary btn-lg font submit" id="submit">Submit</button>
-					  <button type="submit" class=" pull-right btn-link font"><a href="www.google.com">Forget password</a></button>
 					</form>
 					<br/>
-					<a href="/login" class="pull-right btn btn-block btn-danger font" > Already Register ?   </a>
+					
 			    </div>
 			    </div>
 			   </div>

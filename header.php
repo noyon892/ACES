@@ -42,10 +42,22 @@
       		        <li><a href="about.php">About Us</a></li>
       		        <li><a href="ourwork.php">Our Works</a></li>
       		        <li><a href="ourteam.php">Our Team</a></li>
-      		        <li><a href="contactme.php">Contact Us</a></li>
+                  <li><a href="gallery.php">Gallery</a></li>
+                  <li><a href="contactme.php">Contact Us</a></li>
       		  </ul>
       		  <ul class="nav navbar-nav navbar-right">
-      		      <li><a href="userlogin.php">Login</a></li>
+                <?php 
+                  if(!isset($_SESSION['username']) || $_SESSION['username'] == '')
+                  {
+                   
+                    echo "<li><a href='userlogin.php'>Login</a></li>";
+                  }
+                  else
+                  {
+                     echo "<li><a href='userprofile.php'>"+$_SESSION['username']+"</a></li>";
+                  }
+                 ?>
+      		      
       		  </ul>
       		</div><!-- /.navbar-collapse -->
       			
